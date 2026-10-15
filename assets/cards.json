@@ -1,0 +1,283 @@
+{
+  "cards": [
+    {
+      "id": "001",
+      "name": "就爱攒",
+      "speed": 3,
+      "target": "none",
+      "tags": [
+        "counter"
+      ],
+      "rules": [
+        {
+          "event": "on_resolve",
+          "condition": "true",
+          "actions": [
+            {
+              "type": "counter_add",
+              "counter_type": "life",
+              "amount": 2
+            }
+          ]
+        }
+      ],
+      "text": "生命指示物+2"
+    },
+    {
+      "id": "003",
+      "name": "我忍够了",
+      "speed": 2,
+      "target": "none",
+      "tags": [
+        "counter",
+        "damage",
+        "conditional"
+      ],
+      "rules": [
+        {
+          "event": "on_play",
+          "condition": "$counters_life >= 4",
+          "actions": [
+            {
+              "type": "store",
+              "locked_t": 1
+            },
+            {
+              "type": "transform",
+              "speed": 6
+            }
+          ]
+        },
+        {
+          "event": "on_play",
+          "condition": "else",
+          "actions": [
+            {
+              "type": "store",
+              "locked_t": 0
+            }
+          ]
+        },
+        {
+          "event": "on_resolve",
+          "condition": "$locked_t == 1",
+          "actions": [
+            {
+              "type": "damage",
+              "amount": 5,
+              "target": "opponent"
+            }
+          ]
+        },
+        {
+          "event": "on_resolve",
+          "condition": "else",
+          "actions": [
+            {
+              "type": "counter_add",
+              "counter_type": "life",
+              "amount": 1
+            }
+          ]
+        }
+      ],
+      "text": "生命指示物+1。若释放时生命指示物数量不低于4，则改为速度6并对目标对手造成5点伤害。"
+    },
+    {
+      "id": "005",
+      "name": "你先请",
+      "speed": 7,
+      "target": "card",
+      "tags": [
+        "speed"
+      ],
+      "rules": [
+        {
+          "event": "on_resolve",
+          "condition": "true",
+          "actions": [
+            {
+              "type": "modify_speed",
+              "amount": 3
+            }
+          ]
+        }
+      ],
+      "text": "目标牌速度+3"
+    },
+    {
+      "id": "009",
+      "name": "我也肉疼",
+      "speed": 1,
+      "target": "opponent",
+      "tags": [
+        "counter_nuke"
+      ],
+      "rules": [
+        {
+          "event": "on_resolve",
+          "condition": "true",
+          "actions": [
+            {
+              "type": "counter_nuke",
+              "counter_type": "any"
+            }
+          ]
+        }
+      ],
+      "text": "对目标对手造成x点伤害，x为你拥有的指示物数量。该牌结算后，你失去一半的指示物数量，向上取整。"
+    },
+    {
+      "id": "011",
+      "name": "越养越香",
+      "speed": 2,
+      "target": "player",
+      "tags": [
+        "conditional",
+        "buff"
+      ],
+      "rules": [
+        {
+          "event": "on_play",
+          "condition": "$counters_life >= 3",
+          "actions": [
+            {
+              "type": "choose",
+              "store_key": "chosen_t",
+              "option_a": "011-1",
+              "option_b": "011-2"
+            }
+          ]
+        },
+        {
+          "event": "on_play",
+          "condition": "$chosen_t == 1",
+          "actions": [
+            {
+              "type": "transform",
+              "speed": 3
+            }
+          ]
+        },
+        {
+          "event": "on_resolve",
+          "condition": "$chosen_t == 1",
+          "actions": [
+            {
+              "type": "buff_heal_to_counter",
+              "counter_type": "life"
+            }
+          ]
+        },
+        {
+          "event": "on_resolve",
+          "condition": "else",
+          "actions": [
+            {
+              "type": "heal",
+              "amount": 2,
+              "target": "player"
+            }
+          ]
+        }
+      ],
+      "text": "目标牌手获得2点生命。若释放时你的生命指示物数量不低于3，则可以改为速度3并使你获得“当你获得生命时，获得等量的生命指示物”。"
+    },
+    {
+      "id": "012",
+      "name": "杀一下",
+      "speed": 5,
+      "target": "card",
+      "tags": [
+        "removal"
+      ],
+      "rules": [
+        {
+          "event": "on_resolve",
+          "condition": "true",
+          "actions": [
+            {
+              "type": "remove_speed_range",
+              "max": 4
+            }
+          ]
+        }
+      ],
+      "text": "移除目标速度不高于4的牌"
+    },
+    {
+      "id": "019",
+      "name": "换张看看",
+      "speed": 3,
+      "target": "none",
+      "tags": [
+        "counter",
+        "draw"
+      ],
+      "rules": [
+        {
+          "event": "on_resolve",
+          "condition": "true",
+          "actions": [
+            {
+              "type": "counter_add",
+              "counter_type": "life",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "event": "on_resolve",
+          "condition": "optional($counters_life >= 1)",
+          "actions": [
+            {
+              "type": "counter_remove",
+              "counter_type": "life",
+              "amount": 1
+            },
+            {
+              "type": "draw",
+              "amount": 1
+            }
+          ]
+        }
+      ],
+      "text": "生命指示物+1。结算时，你可以失去1个生命指示物；若如此做，将抓一张牌的效应加入结算。"
+    },
+    {
+      "id": "032",
+      "name": "突然不乖",
+      "speed": 1,
+      "target": "none",
+      "tags": [
+        "heal",
+        "damage",
+        "conditional"
+      ],
+      "rules": [
+        {
+          "event": "on_pre_resolve",
+          "condition": "$hand_count >= 3",
+          "actions": [
+            {
+              "type": "damage",
+              "amount": 3,
+              "target": "opponent"
+            }
+          ]
+        },
+        {
+          "event": "on_pre_resolve",
+          "condition": "else",
+          "actions": [
+            {
+              "type": "heal",
+              "amount": 3
+            }
+          ]
+        }
+      ],
+      "text": "你获得3点生命。当此牌将要结算时，若你的手牌数量不低于3，则将该牌效果改为对目标对手造成3点伤害。"
+    }
+  ]
+}

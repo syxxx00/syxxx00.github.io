@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="960" viewBox="0 0 1400 960" role="img" aria-labelledby="title description">
+<title id="title">围绕作品继续发展的创作管线</title><desc id="description">原意和概念参与表现方案与实现方法的选择；生成、整图交接和局部修改是可选分支。原生条件进入模型执行，保存候选和版本，再比较真实图像并决定继续、回退、采用或停止。</desc>
+<defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".65" fill="#d8ddd4"/></pattern>
+<marker id="main-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 9 5 1 9" fill="none" stroke="#776688" stroke-width="1.5"/></marker>
+<marker id="return-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 9 5 1 9" fill="none" stroke="#9b754b" stroke-width="1.5"/></marker>
+<style>text{font-family:'Segoe UI','Microsoft YaHei',sans-serif;fill:#29332f}.node-id{font-family:Consolas,monospace;font-size:12px;fill:#776688;letter-spacing:.3px}.node-title{font-size:19px;font-weight:600}.node-detail{font-size:14px;fill:#687269}.edge{fill:none;stroke:#776688;stroke-width:1.65;marker-end:url(#main-arrow)}.edge.return{stroke:#9b754b;stroke-dasharray:6 5;marker-end:url(#return-arrow)}.edge-label{font-size:13px;fill:#5b695e}.edge-label.return{fill:#926e44}.node.focus .node-id{fill:#c6d8c8}.node.focus .node-title{fill:#fffefa;font-size:22px}.node.focus .node-detail{fill:#dce4d9}.legend{font-size:12px;fill:#7c857b}</style></defs>
+<rect width="100%" height="100%" rx="6" fill="#f0f1eb"/>
+<rect x="16" y="16" width="1368" height="928" rx="5" fill="url(#dots)" stroke="#d6ddd0"/>
+<g data-from="intent" data-to="proposal"><path d="M 288 125 L 392 124.992" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge main" d="M 288 125 L 392 124.992"/></g>
+<g data-from="concept" data-to="proposal"><path d="M 288 333.26 L 332 333.26 Q 341 333.26 341 324.26 L 341 180.84 Q 341 171.84 350 171.84 L 392 171.84" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge main" d="M 288 333.26 L 332 333.26 Q 341 333.26 341 324.26 L 341 180.84 Q 341 171.84 350 171.84 L 392 171.84"/></g>
+<g data-from="proposal" data-to="generate"><path d="M 668 123.2 L 706 123.2 Q 715 123.2 715 114.2 L 715 114 Q 715 105 724 105 L 764 105" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge main" d="M 668 123.2 L 706 123.2 Q 715 123.2 715 114.2 L 715 114 Q 715 105 724 105 L 764 105"/></g>
+<g data-from="proposal" data-to="handoff"><path d="M 668 123.2 L 706 123.2 Q 715 123.2 715 132.2 L 715 308 Q 715 317 724 317 L 764 317" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge main" d="M 668 123.2 L 706 123.2 Q 715 123.2 715 132.2 L 715 308 Q 715 317 724 317 L 764 317"/></g>
+<g data-from="proposal" data-to="local_edit"><path d="M 668 123.2 L 706 123.2 Q 715 123.2 715 132.2 L 715 520 Q 715 529 724 529 L 764 529" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge main" d="M 668 123.2 L 706 123.2 Q 715 123.2 715 132.2 L 715 520 Q 715 529 724 529 L 764 529"/></g>
+<g data-from="generate" data-to="native"><path d="M 1010 105 L 1051 105 Q 1060 105 1060 114 L 1060 283.16 Q 1060 292.16 1069 292.16 L 1104 292.16" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge main" d="M 1010 105 L 1051 105 Q 1060 105 1060 114 L 1060 283.16 Q 1060 292.16 1069 292.16 L 1104 292.16"/></g>
+<g data-from="handoff" data-to="native"><path d="M 1010 317 L 1054.5 317 Q 1060 317 1060 322.5 L 1060 322.5 Q 1060 328 1065.5 328 L 1104 328" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge main" d="M 1010 317 L 1054.5 317 Q 1060 317 1060 322.5 L 1060 322.5 Q 1060 328 1065.5 328 L 1104 328"/></g>
+<g data-from="local_edit" data-to="native"><path d="M 1010 529 L 1051 529 Q 1060 529 1060 520 L 1060 375.4 Q 1060 366.4 1069 366.4 L 1104 366.4" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge main" d="M 1010 529 L 1051 529 Q 1060 529 1060 520 L 1060 375.4 Q 1060 366.4 1069 366.4 L 1104 366.4"/></g>
+<g data-from="native" data-to="versions"><path d="M 1231 392 L 1231 684" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge main" d="M 1231 392 L 1231 684"/></g>
+<g data-from="versions" data-to="compare"><path d="M 1110 754 L 1016 754" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge main" d="M 1110 754 L 1016 754"/></g>
+<g data-from="compare" data-to="choose"><path d="M 770 754 L 674 754" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge main" d="M 770 754 L 674 754"/></g>
+<g data-from="choose" data-to="rollback"><path d="M 398 743.76 L 341.38 743.76 Q 341 743.76 341 743.38 L 341 743.38 Q 341 743 340.62 743 L 294 743" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge return" d="M 398 743.76 L 341.38 743.76 Q 341 743.76 341 743.38 L 341 743.38 Q 341 743 340.62 743 L 294 743"/></g>
+<g data-from="choose" data-to="finish"><path d="M 533 818 L 533 860" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge main" d="M 533 818 L 533 860"/></g>
+<g data-from="rollback" data-to="proposal"><path d="M 168 690 L 168 669 Q 168 660 177 660 L 437.6 660 Q 446.6 660 446.6 651 L 446.6 206" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge return" d="M 168 690 L 168 669 Q 168 660 177 660 L 437.6 660 Q 446.6 660 446.6 651 L 446.6 206"/></g>
+<g data-from="choose" data-to="proposal"><path d="M 581.6 690 L 581.6 637.7 Q 581.6 635 584.3 635 L 584.3 635 Q 587 635 587 632.3 L 587 206" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge return" d="M 581.6 690 L 581.6 637.7 Q 581.6 635 584.3 635 L 584.3 635 Q 587 635 587 632.3 L 587 206"/></g>
+<g data-from="compare" data-to="concept"><path d="M 890 690 L 890 626 Q 890 617 881 617 L 177 617 Q 168 617 168 608 L 168 418" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge return" d="M 890 690 L 890 626 Q 890 617 881 617 L 177 617 Q 168 617 168 608 L 168 418"/></g>
+<g data-from="versions" data-to="native"><path d="M 1352 769.36 L 1366 769.36 Q 1375 769.36 1375 760.36 L 1375 234 Q 1375 225 1366 225 L 1240 225 Q 1231 225 1231 234 L 1231 258" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge return" d="M 1352 769.36 L 1366 769.36 Q 1375 769.36 1375 760.36 L 1375 234 Q 1375 225 1366 225 L 1240 225 Q 1231 225 1231 234 L 1231 258"/></g>
+<rect x="301.5" y="93" width="81" height="22" rx="3" fill="#f0f1eb"/><text class="edge-label main" x="342" y="108" text-anchor="middle">原意与用途</text>
+<rect x="309" y="239" width="68" height="22" rx="3" fill="#f0f1eb"/><text class="edge-label main" x="343" y="254" text-anchor="middle">支持选择</text>
+<rect x="1190.5" y="544" width="81" height="22" rx="3" fill="#f0f1eb"/><text class="edge-label main" x="1231" y="559" text-anchor="middle">执行并保存</text>
+<rect x="1019.5" y="721" width="81" height="22" rx="3" fill="#f0f1eb"/><text class="edge-label main" x="1060" y="736" text-anchor="middle">图像与来源</text>
+<rect x="678.5" y="721" width="81" height="22" rx="3" fill="#f0f1eb"/><text class="edge-label main" x="719" y="736" text-anchor="middle">比较后取舍</text>
+<rect x="253.5" y="649" width="133" height="22" rx="3" fill="#f0f1eb"/><text class="edge-label return" x="320" y="664" text-anchor="middle">从已有起点重新选择</text>
+<rect x="534.5" y="441" width="107" height="22" rx="3" fill="#f0f1eb"/><text class="edge-label return" x="588" y="456" text-anchor="middle">返回表现与方法</text>
+<rect x="260" y="606" width="120" height="22" rx="3" fill="#f0f1eb"/><text class="edge-label return" x="320" y="621" text-anchor="middle">新的画面修正认识</text>
+<rect x="1164.5" y="214" width="133" height="22" rx="3" fill="#f0f1eb"/><text class="edge-label return" x="1231" y="229" text-anchor="middle">版本可作为后继输入</text>
+<g class="node" data-node="intent"><rect x="48" y="72" width="240" height="106" rx="6" fill="#fffefa" stroke="#a9b8aa" stroke-width="1.2"/><text class="node-id" x="66" y="96">intent</text><text class="node-title" x="66" y="124">原意与当前创作</text>
+<text class="node-detail" x="66" y="150">用户原句、当前作品与反馈</text>
+<circle cx="288" cy="125" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+</g>
+<g class="node" data-node="concept"><rect x="48" y="285" width="240" height="127" rx="6" fill="#fffefa" stroke="#a9b8aa" stroke-width="1.2"/><text class="node-id" x="66" y="309">concept</text><text class="node-title" x="66" y="337">concept / 研究认识</text>
+<text class="node-detail" x="66" y="363">对象、表现与已有经验</text>
+<text class="node-detail" x="66" y="384">参与当前选择，并接受修正</text>
+<circle cx="168" cy="412" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="288" cy="333.26" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+</g>
+<g class="node focus" data-node="proposal"><rect x="398" y="72" width="270" height="128" rx="6" fill="#344e42" stroke="#344e42" stroke-width="1.2"/><text class="node-id" x="416" y="96">proposal</text><text class="node-title" x="416" y="124">表现方案 × 实现方法</text>
+<text class="node-detail" x="416" y="150">人物、场景、构图与画风</text>
+<text class="node-detail" x="416" y="171">想形成的变化与可行做法</text>
+<circle cx="398" cy="124.992" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="398" cy="171.84" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="446.6" cy="200" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="587" cy="200" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="668" cy="123.2" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+</g>
+<g class="node" data-node="generate"><rect x="770" y="52" width="240" height="106" rx="6" fill="#fffefa" stroke="#a9b8aa" stroke-width="1.2"/><text class="node-id" x="788" y="76">generate</text><text class="node-title" x="788" y="104">生成新图</text>
+<text class="node-detail" x="788" y="130">组织新的起点与候选</text>
+<circle cx="770" cy="105" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="1010" cy="105" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+</g>
+<g class="node" data-node="handoff"><rect x="770" y="264" width="240" height="106" rx="6" fill="#fffefa" stroke="#a9b8aa" stroke-width="1.2"/><text class="node-id" x="788" y="288">handoff</text><text class="node-title" x="788" y="316">整图交接</text>
+<text class="node-detail" x="788" y="342">继承已有像素，发展表现</text>
+<circle cx="770" cy="317" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="1010" cy="317" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+</g>
+<g class="node" data-node="local_edit"><rect x="770" y="476" width="240" height="106" rx="6" fill="#fffefa" stroke="#a9b8aa" stroke-width="1.2"/><text class="node-id" x="788" y="500">local_edit</text><text class="node-title" x="788" y="528">局部修改</text>
+<text class="node-detail" x="788" y="554">选择源图、区域与修改范围</text>
+<circle cx="770" cy="529" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="1010" cy="529" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+</g>
+<g class="node" data-node="native"><rect x="1110" y="264" width="242" height="128" rx="6" fill="#fffefa" stroke="#a9b8aa" stroke-width="1.2"/><text class="node-id" x="1128" y="288">native</text><text class="node-title" x="1128" y="316">原生条件与模型执行</text>
+<text class="node-detail" x="1128" y="342">提示条件、源图或修改区域</text>
+<text class="node-detail" x="1128" y="363">采样、编码与模型参数</text>
+<circle cx="1110" cy="292.16" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="1110" cy="328" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="1110" cy="366.4" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="1231" cy="264" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="1231" cy="392" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+</g>
+<g class="node" data-node="versions"><rect x="1110" y="690" width="242" height="128" rx="6" fill="#fffefa" stroke="#a9b8aa" stroke-width="1.2"/><text class="node-id" x="1128" y="714">versions</text><text class="node-title" x="1128" y="742">候选与父子版本</text>
+<text class="node-detail" x="1128" y="768">图像、请求与工作流</text>
+<text class="node-detail" x="1128" y="789">保留每次操作及其来源</text>
+<circle cx="1110" cy="754" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="1231" cy="690" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="1352" cy="769.36" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+</g>
+<g class="node" data-node="compare"><rect x="770" y="690" width="240" height="128" rx="6" fill="#fffefa" stroke="#a9b8aa" stroke-width="1.2"/><text class="node-id" x="788" y="714">compare</text><text class="node-title" x="788" y="742">实际观察与比较</text>
+<text class="node-detail" x="788" y="768">比较原意、源图与后继</text>
+<text class="node-detail" x="788" y="789">人的评价对应具体版本</text>
+<circle cx="770" cy="754" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="890" cy="690" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="1010" cy="754" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+</g>
+<g class="node" data-node="choose"><rect x="398" y="690" width="270" height="128" rx="6" fill="#fffefa" stroke="#a9b8aa" stroke-width="1.2"/><text class="node-id" x="416" y="714">choose</text><text class="node-title" x="416" y="742">决定下一步</text>
+<text class="node-detail" x="416" y="768">保留什么、继续改变什么</text>
+<text class="node-detail" x="416" y="789">当前结果影响下一次选择</text>
+<circle cx="398" cy="743.76" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="533" cy="818" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="581.6" cy="690" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="668" cy="754" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+</g>
+<g class="node" data-node="rollback"><rect x="48" y="690" width="240" height="106" rx="6" fill="#fffefa" stroke="#a9b8aa" stroke-width="1.2"/><text class="node-id" x="66" y="714">rollback</text><text class="node-title" x="66" y="742">回到已有版本</text>
+<text class="node-detail" x="66" y="768">重选可用起点与操作</text>
+<circle cx="168" cy="690" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="288" cy="743" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+</g>
+<g class="node" data-node="finish"><rect x="398" y="866" width="270" height="62" rx="6" fill="#fffefa" stroke="#a9b8aa" stroke-width="1.2"/><text class="node-id" x="416" y="890">finish</text><text class="node-title" x="416" y="918">采用 / 停止</text>
+<circle cx="533" cy="866" r="3.6" fill="#776688" stroke="#f0f1eb" stroke-width="1.1"/>
+</g>
+<path d="M42 929h32" class="edge"/><text class="legend" x="86" y="933">作用与展开</text><path d="M220 929h32" class="edge return"/><text class="legend" x="264" y="933">返回与重新使用</text></svg>

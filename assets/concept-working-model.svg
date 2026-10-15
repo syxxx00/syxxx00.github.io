@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="850" viewBox="0 0 1400 850" role="img" aria-labelledby="title description">
+<title id="title">概念形成与使用的工作模型</title><desc id="description">原件、经验、目的与方法共同参与理解；理解继续推导和创造。承载使理解可以重新进入，实际使用返回理解、目的和方法。</desc>
+<defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".65" fill="#d8ddd4"/></pattern>
+<marker id="main-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 9 5 1 9" fill="none" stroke="#617664" stroke-width="1.5"/></marker>
+<marker id="return-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 9 5 1 9" fill="none" stroke="#9b754b" stroke-width="1.5"/></marker>
+<style>text{font-family:'Segoe UI','Microsoft YaHei',sans-serif;fill:#29332f}.node-id{font-family:Consolas,monospace;font-size:12px;fill:#617664;letter-spacing:.3px}.node-title{font-size:19px;font-weight:600}.node-detail{font-size:14px;fill:#687269}.edge{fill:none;stroke:#617664;stroke-width:1.65;marker-end:url(#main-arrow)}.edge.return{stroke:#9b754b;stroke-dasharray:6 5;marker-end:url(#return-arrow)}.edge-label{font-size:13px;fill:#5b695e}.edge-label.return{fill:#926e44}.node.focus .node-id{fill:#c6d8c8}.node.focus .node-title{fill:#fffefa;font-size:22px}.node.focus .node-detail{fill:#dce4d9}.legend{font-size:12px;fill:#7c857b}</style></defs>
+<rect width="100%" height="100%" rx="6" fill="#f0f1eb"/>
+<rect x="16" y="16" width="1368" height="818" rx="5" fill="url(#dots)" stroke="#d6ddd0"/>
+<g data-from="material" data-to="understanding"><path d="M 298 318 L 347.74 318 Q 348 318 348 317.74 L 348 317.74 Q 348 317.48 348.26 317.48 L 394 317.48" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge main" d="M 298 318 L 347.74 318 Q 348 318 348 317.74 L 348 317.74 Q 348 317.48 348.26 317.48 L 394 317.48"/></g>
+<g data-from="prior" data-to="understanding"><path d="M 298 519 L 339 519 Q 348 519 348 510 L 348 373.84 Q 348 364.84 357 364.84 L 394 364.84" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge main" d="M 298 519 L 339 519 Q 348 519 348 510 L 348 373.84 Q 348 364.84 357 364.84 L 394 364.84"/></g>
+<g data-from="purpose" data-to="understanding"><path d="M 494.5 180 L 494.5 259" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge main" d="M 494.5 180 L 494.5 259"/></g>
+<g data-from="understanding" data-to="purpose"><path d="M 610.6 265 L 610.6 186" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge return" d="M 610.6 265 L 610.6 186"/></g>
+<g data-from="understanding" data-to="carrier"><path d="M 670 290.6 L 716 290.6 Q 725 290.6 725 281.6 L 725 136 Q 725 127 734 127 L 784 127" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge main" d="M 670 290.6 L 716 290.6 Q 725 290.6 725 281.6 L 725 136 Q 725 127 734 127 L 784 127"/></g>
+<g data-from="carrier" data-to="understanding"><path d="M 950 180 L 950 206 Q 950 215 941 215 L 762 215 Q 753 215 753 224 L 753 262.4 Q 753 271.4 744 271.4 L 676 271.4" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge return" d="M 950 180 L 950 206 Q 950 215 941 215 L 762 215 Q 753 215 753 224 L 753 262.4 Q 753 271.4 744 271.4 L 676 271.4"/></g>
+<g data-from="understanding" data-to="continue"><path d="M 670 354.6 L 784 354.6" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge main" d="M 670 354.6 L 784 354.6"/></g>
+<g data-from="continue" data-to="actual"><path d="M 1040 354.6 L 1114 354.6" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge main" d="M 1040 354.6 L 1114 354.6"/></g>
+<g data-from="actual" data-to="understanding"><path d="M 1231.36 393 L 1231.36 451 Q 1231.36 460 1222.36 460 L 544 460 Q 535 460 535 451 L 535 399" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge return" d="M 1231.36 393 L 1231.36 451 Q 1231.36 460 1222.36 460 L 544 460 Q 535 460 535 451 L 535 399"/></g>
+<g data-from="actual" data-to="purpose"><path d="M 1268.48 265 L 1268.48 45 Q 1268.48 36 1259.48 36 L 544 36 Q 535 36 535 45 L 535 68" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge return" d="M 1268.48 265 L 1268.48 45 Q 1268.48 36 1259.48 36 L 544 36 Q 535 36 535 45 L 535 68"/></g>
+<g data-from="method" data-to="understanding"><path d="M 475.6 650 L 475.6 399" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge main" d="M 475.6 650 L 475.6 399"/></g>
+<g data-from="method" data-to="continue"><path d="M 670 703 L 906 703 Q 915 703 915 694 L 915 399" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge main" d="M 670 703 L 906 703 Q 915 703 915 694 L 915 399"/></g>
+<g data-from="actual" data-to="method"><path d="M 1305.6 393 L 1305.6 785 Q 1305.6 794 1296.6 794 L 544 794 Q 535 794 535 785 L 535 762" fill="none" stroke="#f0f1eb" stroke-width="6"/><path class="edge return" d="M 1305.6 393 L 1305.6 785 Q 1305.6 794 1296.6 794 L 544 794 Q 535 794 535 785 L 535 762"/></g>
+<rect x="307.5" y="282" width="81" height="22" rx="3" fill="#f0f1eb"/><text class="edge-label main" x="348" y="297" text-anchor="middle">原件与来路</text>
+<rect x="314" y="424" width="68" height="22" rx="3" fill="#f0f1eb"/><text class="edge-label main" x="348" y="439" text-anchor="middle">已有认识</text>
+<rect x="419" y="212" width="68" height="22" rx="3" fill="#f0f1eb"/><text class="edge-label main" x="453" y="227" text-anchor="middle">组织锚点</text>
+<rect x="626" y="212" width="68" height="22" rx="3" fill="#f0f1eb"/><text class="edge-label return" x="660" y="227" text-anchor="middle">改变问题</text>
+<rect x="691" y="192" width="68" height="22" rx="3" fill="#f0f1eb"/><text class="edge-label main" x="725" y="207" text-anchor="middle">形成承载</text>
+<rect x="799.5" y="204" width="107" height="22" rx="3" fill="#f0f1eb"/><text class="edge-label return" x="853" y="219" text-anchor="middle">按用途重新进入</text>
+<rect x="689.5" y="324" width="81" height="22" rx="3" fill="#f0f1eb"/><text class="edge-label main" x="730" y="339" text-anchor="middle">沿关系展开</text>
+<rect x="817.5" y="449" width="159" height="22" rx="3" fill="#f0f1eb"/><text class="edge-label return" x="897" y="464" text-anchor="middle">支持、反驳或形成新联系</text>
+<rect x="1017" y="25" width="146" height="22" rx="3" fill="#f0f1eb"/><text class="edge-label return" x="1090" y="40" text-anchor="middle">实际使用也能改变用途</text>
+<rect x="410" y="542" width="68" height="22" rx="3" fill="#f0f1eb"/><text class="edge-label main" x="444" y="557" text-anchor="middle">参与建模</text>
+<rect x="861.5" y="554" width="107" height="22" rx="3" fill="#f0f1eb"/><text class="edge-label main" x="915" y="569" text-anchor="middle">参与推导与创造</text>
+<rect x="953.5" y="783" width="133" height="22" rx="3" fill="#f0f1eb"/><text class="edge-label return" x="1020" y="798" text-anchor="middle">修正方法的适用关系</text>
+<g class="node" data-node="material"><rect x="48" y="265" width="250" height="106" rx="6" fill="#fffefa" stroke="#a9b8aa" stroke-width="1.2"/><text class="node-id" x="66" y="289">material</text><text class="node-title" x="66" y="317">原话、原件与实际过程</text>
+<text class="node-detail" x="66" y="343">保留来路、情境与作用范围</text>
+<circle cx="298" cy="318" r="3.6" fill="#617664" stroke="#f0f1eb" stroke-width="1.1"/>
+</g>
+<g class="node" data-node="prior"><rect x="48" y="466" width="250" height="106" rx="6" fill="#fffefa" stroke="#a9b8aa" stroke-width="1.2"/><text class="node-id" x="66" y="490">prior</text><text class="node-title" x="66" y="518">经验与借入的认识</text>
+<text class="node-detail" x="66" y="544">已有经验也参与当前判断</text>
+<circle cx="298" cy="519" r="3.6" fill="#617664" stroke="#f0f1eb" stroke-width="1.1"/>
+</g>
+<g class="node" data-node="purpose"><rect x="400" y="74" width="270" height="106" rx="6" fill="#fffefa" stroke="#a9b8aa" stroke-width="1.2"/><text class="node-id" x="418" y="98">purpose</text><text class="node-title" x="418" y="126">当前目的与活动位置</text>
+<text class="node-detail" x="418" y="152">影响值得展开的关系与锚点</text>
+<circle cx="494.5" cy="180" r="3.6" fill="#617664" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="535" cy="74" r="3.6" fill="#617664" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="610.6" cy="180" r="3.6" fill="#617664" stroke="#f0f1eb" stroke-width="1.1"/>
+</g>
+<g class="node focus" data-node="understanding"><rect x="400" y="265" width="270" height="128" rx="6" fill="#344e42" stroke="#344e42" stroke-width="1.2"/><text class="node-id" x="418" y="289">understanding</text><text class="node-title" x="418" y="317">当前理解 / 模型</text>
+<text class="node-detail" x="418" y="343">对象、关系与未展开的联系</text>
+<text class="node-detail" x="418" y="364">认识什么在改变什么</text>
+<circle cx="400" cy="317.48" r="3.6" fill="#617664" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="400" cy="364.84" r="3.6" fill="#617664" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="475.6" cy="393" r="3.6" fill="#617664" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="494.5" cy="265" r="3.6" fill="#617664" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="535" cy="393" r="3.6" fill="#617664" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="610.6" cy="265" r="3.6" fill="#617664" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="670" cy="271.4" r="3.6" fill="#617664" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="670" cy="290.6" r="3.6" fill="#617664" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="670" cy="354.6" r="3.6" fill="#617664" stroke="#f0f1eb" stroke-width="1.1"/>
+</g>
+<g class="node" data-node="carrier"><rect x="790" y="74" width="250" height="106" rx="6" fill="#fffefa" stroke="#a9b8aa" stroke-width="1.2"/><text class="node-id" x="808" y="98">carrier</text><text class="node-title" x="808" y="126">可重新进入的承载</text>
+<text class="node-detail" x="808" y="152">文字、图像、过程与程序</text>
+<circle cx="790" cy="127" r="3.6" fill="#617664" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="950" cy="180" r="3.6" fill="#617664" stroke="#f0f1eb" stroke-width="1.1"/>
+</g>
+<g class="node" data-node="continue"><rect x="790" y="265" width="250" height="128" rx="6" fill="#fffefa" stroke="#a9b8aa" stroke-width="1.2"/><text class="node-id" x="808" y="289">continue</text><text class="node-title" x="808" y="317">推导、取材与创造</text>
+<text class="node-detail" x="808" y="343">改变条件，形成候选</text>
+<text class="node-detail" x="808" y="364">产生新对象与新问题</text>
+<circle cx="790" cy="354.6" r="3.6" fill="#617664" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="915" cy="393" r="3.6" fill="#617664" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="1040" cy="354.6" r="3.6" fill="#617664" stroke="#f0f1eb" stroke-width="1.1"/>
+</g>
+<g class="node" data-node="actual"><rect x="1120" y="265" width="232" height="128" rx="6" fill="#fffefa" stroke="#a9b8aa" stroke-width="1.2"/><text class="node-id" x="1138" y="289">actual</text><text class="node-title" x="1138" y="317">实际使用与新材料</text>
+<text class="node-detail" x="1138" y="343">作品、回应与真实过程</text>
+<text class="node-detail" x="1138" y="364">给理解带来新的依据</text>
+<circle cx="1120" cy="354.6" r="3.6" fill="#617664" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="1231.36" cy="393" r="3.6" fill="#617664" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="1268.48" cy="265" r="3.6" fill="#617664" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="1305.6" cy="393" r="3.6" fill="#617664" stroke="#f0f1eb" stroke-width="1.1"/>
+</g>
+<g class="node" data-node="method"><rect x="400" y="650" width="270" height="106" rx="6" fill="#fffefa" stroke="#a9b8aa" stroke-width="1.2"/><text class="node-id" x="418" y="674">method</text><text class="node-title" x="418" y="702">取材、建模与使用方法</text>
+<text class="node-detail" x="418" y="728">组织理解与后继怎样展开</text>
+<circle cx="475.6" cy="650" r="3.6" fill="#617664" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="535" cy="756" r="3.6" fill="#617664" stroke="#f0f1eb" stroke-width="1.1"/>
+<circle cx="670" cy="703" r="3.6" fill="#617664" stroke="#f0f1eb" stroke-width="1.1"/>
+</g>
+<path d="M42 819h32" class="edge"/><text class="legend" x="86" y="823">作用与展开</text><path d="M220 819h32" class="edge return"/><text class="legend" x="264" y="823">返回与重新使用</text></svg>
